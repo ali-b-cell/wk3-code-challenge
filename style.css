@@ -1,0 +1,53 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Movie List */
+#films {
+  list-style: none;
+  padding: 0;
+}
+
+.film {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.film:hover {
+  background-color: #eee;
+}
+
+/* Sold Out Movies */
+.sold-out {
+  color: red;
+  text-decoration: line-through;
+}
+
+/* Movie Details */
+#movie-details {
+  text-align: center;
+}
+
+#movie-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buy Ticket Button */
+#buy-ticket {
+  background-color: #a72883;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#buy-ticket.sold-out {
+  background-color: rgb(183, 164, 164);
+  cursor: not-allowed;
+}
